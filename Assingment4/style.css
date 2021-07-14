@@ -2,6 +2,17 @@ body{
   background:#F5F5DC;
 }
 
+a:link{
+  color: black;
+}
+a:visited{
+  color:green;
+}
+a:hover{
+  color: red;
+}
+
+
 .project {
   width: 800px;
   height: 800px;
