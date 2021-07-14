@@ -12,6 +12,15 @@ a:hover{
   color: red;
 }
 
+img{
+  transition: transform .2s;
+  width: 500;
+  height: 300;
+}
+img:hover{
+  transform-origin: top;
+  transform: scale(1.5);
+}
 
 .project {
   width: 800px;
