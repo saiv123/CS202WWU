@@ -9,8 +9,17 @@
                                  |___/                                                             |___/ 
 */
 
+path = "http://api.open-notify.org/astros.json?callback=?";
+try {
+    $.getJSON(path, function(data){
+        console.log(data);
+    });
+} catch (error) {
+    path = "./astrostuff.json";
+}
+
 function getAstro(){
-    $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
+    $.getJSON(path, function(data) {
         document.getElementById("tableA").innerHTML = '';
         var text = "There are currently "+ data['number'] +" people in space.";
         document.getElementById("textBox").innerHTML = text;
@@ -23,7 +32,7 @@ function getAstro(){
 }
 
 function getCraft(){
-    $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
+    $.getJSON(path, function(data) {
         document.getElementById("tableA").innerHTML = '';
         var notunique = [];
         data['people'].forEach(function (e){
