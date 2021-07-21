@@ -2,12 +2,19 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="getData.js"></script>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
 
 <body>
  <div id = "info"></div>
  <button onclick="getAstro()">Astronots</button>
  <button onclick="getCraft()">Space crafts</button>
  <p id="textBox">Click on the buttons to get info on the people in space.</p>
- <ul id = "list"></ul>
+    <table id="tableA">
+        <tr id = "list"></tr>
+    </table>
 </body>
 
