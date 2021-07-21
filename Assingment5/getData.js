@@ -9,14 +9,16 @@
                                  |___/                                                             |___/ 
 */
 
-path = "http://api.open-notify.org/astros.json?callback=?";
-try {
-    $.getJSON(path, function(data){
-        console.log(data);
-    });
-} catch (error) {
-    path = "./astrostuff.json";
-}
+// path = "http://api.open-notify.org/astros.json?callback=?";
+// try {
+//     $.getJSON(path, function(data){
+//         console.log(data);
+//     });
+// } catch (error) {
+//     path = "./astrostuff.json";
+// }
+
+path = "./astrostuff.json";
 
 function getAstro(){
     $.getJSON(path, function(data) {
