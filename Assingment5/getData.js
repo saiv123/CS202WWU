@@ -45,7 +45,7 @@ function getCraft(){
         var text = "There are currently "+ unique.length +" space crafts in space.";
         document.getElementById("textBox").innerHTML = text;
 
-        $('#tableA').append('<tr> <th>Craft</th> <th>Number of Poeple</th> </tr>');
+        $('#tableA').append('<tr> <th>Craft</th> <th>Number of People</th> </tr>');
         unique.forEach(function (c){
             $('#tableA').append('<tr> <td>' +c+ '</td><td>'+countCraft(notunique,c)+'</td></tr>');
         });
