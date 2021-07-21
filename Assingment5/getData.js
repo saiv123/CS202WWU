@@ -18,7 +18,7 @@
 //     path = "./astrostuff.json";
 // }
 
-path = "./astrostuff.json";
+var path = "./astrostuff.json";
 
 function getAstro(){
     $.getJSON(path, function(data) {
