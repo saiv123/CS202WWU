@@ -1,3 +1,14 @@
+/*
+  _                 _    _               ______            _____                 _   _     _             
+ | |               | |  (_)             |  ____|          / ____|               | | | |   (_)            
+ | |     ___   ___ | | ___ _ __   __ _  | |__ ___  _ __  | (___   ___  _ __ ___ | |_| |__  _ _ __   __ _ 
+ | |    / _ \ / _ \| |/ / | '_ \ / _` | |  __/ _ \| '__|  \___ \ / _ \| '_ ` _ \| __| '_ \| | '_ \ / _` |
+ | |___| (_) | (_) |   <| | | | | (_| | | | | (_) | |     ____) | (_) | | | | | | |_| | | | | | | | (_| |
+ |______\___/ \___/|_|\_\_|_| |_|\__, | |_|  \___/|_|    |_____/ \___/|_| |_| |_|\__|_| |_|_|_| |_|\__, |
+                                  __/ |                                                             __/ |
+                                 |___/                                                             |___/ 
+*/
+
 function getAstro(){
     $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
         document.getElementById("tableA").innerHTML = '';
@@ -14,7 +25,6 @@ function getAstro(){
 function getCraft(){
     $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
         document.getElementById("tableA").innerHTML = '';
-        console.log(data)
         var notunique = [];
         data['people'].forEach(function (e){
             notunique.push(e['craft']);
