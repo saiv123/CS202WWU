@@ -10,7 +10,7 @@
 */
 
 function getAstro(){
-    $.getJSON('https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json?callback=?', function(data) {
+    $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
         document.getElementById("tableA").innerHTML = '';
         var text = "There are currently "+ data['number'] +" people in space.";
         document.getElementById("textBox").innerHTML = text;
@@ -23,7 +23,7 @@ function getAstro(){
 }
 
 function getCraft(){
-    $.getJSON('https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json?callback=?', function(data) {
+    $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
         document.getElementById("tableA").innerHTML = '';
         var notunique = [];
         data['people'].forEach(function (e){
